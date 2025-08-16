@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Django</title>
-</head>
-<body>
-  <h1>About page</h1>
-  Go to <a href="/">home page</a>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+  Django - About
+{% endblock %}
+
+{% block content %}
+  <h1>About</h1>
+  <p>back to <a href="/">home</a></p>
+{% endblock %}
